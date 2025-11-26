@@ -11,7 +11,7 @@ Then user moves to home page
 
 Examples:
 |	username	|	email			|	password	|
-|	User204		|	user5@gmail.com	|	User1@		|
+|	User207		|	user8@gmail.com	|	User1@		|
 
 
 Scenario Outline: User gives invalid details
