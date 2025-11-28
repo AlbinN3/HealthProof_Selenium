@@ -13,6 +13,7 @@ import com.relevantcodes.extentreports.LogStatus;
 
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.qameta.allure.Allure;
 import pageObjects.Search;
 import utilities.Screenshot;
 import utilities.reporter;
@@ -33,10 +34,12 @@ public class searchInvalid extends reporter{
 	    try {
 	    	assertEquals(noResult.getText(),"No results for \"bbb\"");
 	    	logger.log(LogStatus.PASS, "Invalid search has no results, test passed");
+	    	Allure.step("Invalid search has no results, test passed");
 	    }catch(AssertionError e) {
 	    	logger.log(LogStatus.FAIL, "Invalid search has result, test failed");
 	    	try {
 				screenshot.takeScreenshot("Invalid_search");
+				Allure.addAttachment("Invalid search has result, test failed", e.getMessage());
 			} catch (IOException e1) {
 				e1.printStackTrace();
 			}

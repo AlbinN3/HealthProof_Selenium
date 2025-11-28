@@ -13,6 +13,7 @@ import com.relevantcodes.extentreports.LogStatus;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.qameta.allure.Allure;
 import pageObjects.Headphones;
 import utilities.Screenshot;
 import utilities.reporter;
@@ -44,9 +45,11 @@ public class HeadphoneCountCheck extends reporter{
 	    try {
 	    	assertEquals(expectedItemCount,actualItemCounts);
 	    	logger.log(LogStatus.PASS, "Item count is correct");
+	    	Allure.step("Item count is correct");
 	    }catch(AssertionError e) {
 			try {
 				screenshot.takeScreenshot("Item count is different");
+				Allure.addAttachment("Item count does not match", e.getMessage());
 			} catch (IOException e1) {
 				e1.printStackTrace();
 			}

@@ -12,6 +12,7 @@ import com.relevantcodes.extentreports.LogStatus;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.qameta.allure.Allure;
 import pageObjects.RegisterUser;
 import utilities.Screenshot;
 import utilities.reporter;
@@ -57,10 +58,12 @@ public class RegsiterWithValidDetails extends reporter{
 		try {
 			assertEquals(username,user.getText());
 			logger.log(LogStatus.PASS, "Registration successful with valid values");
+			Allure.step("Registration successful with valid values");
 		}catch(AssertionError e) {
 			logger.log(LogStatus.FAIL, "Registration with valid details failed, test failed");
 			try {
 				screenshot.takeScreenshot("Registration_failure");
+				Allure.addAttachment("Registration_failure", e.getMessage());
 			} catch (IOException e1) {
 				e1.printStackTrace();
 			}

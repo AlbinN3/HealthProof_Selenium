@@ -16,6 +16,7 @@ import com.relevantcodes.extentreports.LogStatus;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.qameta.allure.Allure;
 import pageObjects.Cart;
 import utilities.Screenshot;
 import utilities.reporter;
@@ -56,9 +57,11 @@ public class removeFromCart extends reporter{
 	    try {
 	    	assertNull(checker);
 	    	logger.log(LogStatus.PASS, "Item removed successfully");
+	    	Allure.step("Item removed successdully");
 	    }catch(AssertionError e) {
 	    	logger.log(LogStatus.FAIL, "Item did not removed");
 	    	try {
+	    		Allure.addAttachment("Item not removed", e.getMessage());
 				screenshot.takeScreenshot("Item_Not_Removed");
 			} catch (IOException e1) {
 				e1.printStackTrace();

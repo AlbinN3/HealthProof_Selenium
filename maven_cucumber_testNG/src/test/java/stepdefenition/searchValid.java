@@ -13,6 +13,7 @@ import com.relevantcodes.extentreports.LogStatus;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.qameta.allure.Allure;
 import pageObjects.Search;
 import utilities.Screenshot;
 import utilities.reporter;
@@ -37,9 +38,11 @@ public class searchValid extends reporter{
 	    try {
 	    	assertTrue(result.size()>0);
 	    	logger.log(LogStatus.PASS, "Valid search has results, test passed");
+	    	Allure.step("Valid search has results, test passed");
 	    }catch(AssertionError e) {
 	    	logger.log(LogStatus.FAIL, "Valid search has no result, test failed");
 	    	try {
+	    		Allure.addAttachment("Valid search has no result, test failed", e.getMessage());
 				screenshot.takeScreenshot("Valid_search");
 			} catch (IOException e1) {
 				e1.printStackTrace();

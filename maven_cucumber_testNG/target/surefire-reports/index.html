@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 9 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,61 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">10 methods,   10 passed</span>
+                    <span class="method-stats">10 methods, 9 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testrunner" class="method navigator-link" hash-for-method="runScenario(&quot;User searches for a valid product&quot;, &quot;Optional[Search bar]&quot;)">runScenario("User searches for a valid product", "Optional[Search bar]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testrunner" class="method navigator-link" hash-for-method="runScenario(&quot;User gives invalid details&quot;, &quot;Optional[Register Page]&quot;)">runScenario("User gives invalid details", "Optional[Register Page]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testrunner" class="method navigator-link" hash-for-method="runScenario(&quot;User gives valid details&quot;, &quot;Optional[Register Page]&quot;)">runScenario("User gives valid details", "Optional[Register Page]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testrunner" class="method navigator-link" hash-for-method="runScenario(&quot;User gives invalid details&quot;, &quot;Optional[Register Page]&quot;)">runScenario("User gives invalid details", "Optional[Register Page]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testrunner" class="method navigator-link" hash-for-method="runScenario(&quot;User searches for an invalid product&quot;, &quot;Optional[Search bar]&quot;)">runScenario("User searches for an invalid product", "Optional[Search bar]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testrunner" class="method navigator-link" hash-for-method="runScenario(&quot;User removes a product from cart&quot;, &quot;Optional[Remove from cart]&quot;)">runScenario("User removes a product from cart", "Optional[Remove from cart]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testrunner" class="method navigator-link" hash-for-method="runScenario(&quot;User adds an item to cart&quot;, &quot;Optional[Add to cart]&quot;)">runScenario("User adds an item to cart", "Optional[Add to cart]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testrunner" class="method navigator-link" hash-for-method="runScenario(&quot;System shows correct item count&quot;, &quot;Optional[Headphone count]&quot;)">runScenario("System shows correct item count", "Optional[Headphone count]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testrunner" class="method navigator-link" hash-for-method="runScenario(&quot;User gives invalid details&quot;, &quot;Optional[Register Page]&quot;)">runScenario("User gives invalid details", "Optional[Register Page]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,52 +156,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testrunner" class="method navigator-link" hash-for-method="runScenario(&quot;User adds an item to cart&quot;, &quot;Optional[Add to cart]&quot;)">runScenario("User adds an item to cart", "Optional[Add to cart]")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testrunner" class="method navigator-link" hash-for-method="runScenario(&quot;System should not show any duplicate products&quot;, &quot;Optional[No duplicate feature]&quot;)">runScenario("System should not show any duplicate products", "Optional[No duplicate feature]")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testrunner" class="method navigator-link" hash-for-method="runScenario(&quot;System shows correct item count&quot;, &quot;Optional[Headphone count]&quot;)">runScenario("System shows correct item count", "Optional[Headphone count]")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testrunner" class="method navigator-link" hash-for-method="runScenario(&quot;User gives invalid details&quot;, &quot;Optional[Register Page]&quot;)">runScenario("User gives invalid details", "Optional[Register Page]")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testrunner" class="method navigator-link" hash-for-method="runScenario(&quot;User searches for an invalid product&quot;, &quot;Optional[Search bar]&quot;)">runScenario("User searches for an invalid product", "Optional[Search bar]")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testrunner" class="method navigator-link" hash-for-method="runScenario(&quot;User removes a product from cart&quot;, &quot;Optional[Remove from cart]&quot;)">runScenario("User removes a product from cart", "Optional[Remove from cart]")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testrunner" class="method navigator-link" hash-for-method="runScenario(&quot;User gives valid details&quot;, &quot;Optional[Register Page]&quot;)">runScenario("User gives valid details", "Optional[Register Page]")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testrunner" class="method navigator-link" hash-for-method="runScenario(&quot;User searches for a valid product&quot;, &quot;Optional[Search bar]&quot;)">runScenario("User searches for a valid product", "Optional[Search bar]")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testrunner" class="method navigator-link" hash-for-method="runScenario(&quot;User gives invalid details&quot;, &quot;Optional[Register Page]&quot;)">runScenario("User gives invalid details", "Optional[Register Page]")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testrunner" class="method navigator-link" hash-for-method="runScenario(&quot;User gives invalid details&quot;, &quot;Optional[Register Page]&quot;)">runScenario("User gives invalid details", "Optional[Register Page]")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -162,38 +171,39 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">testrunner</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;User adds an item to cart&quot;, &quot;Optional[Add to cart]&quot;)">
-                  </a> <!-- runScenario("User adds an item to cart", "Optional[Add to cart]") -->
+                  <a name="runScenario(&quot;User searches for a valid product&quot;, &quot;Optional[Search bar]&quot;)">
+                  </a> <!-- runScenario("User searches for a valid product", "Optional[Search bar]") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("User adds an item to cart", "Optional[Add to cart]")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;System should not show any duplicate products&quot;, &quot;Optional[No duplicate feature]&quot;)">
-                  </a> <!-- runScenario("System should not show any duplicate products", "Optional[No duplicate feature]") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("System should not show any duplicate products", "Optional[No duplicate feature]")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;System shows correct item count&quot;, &quot;Optional[Headphone count]&quot;)">
-                  </a> <!-- runScenario("System shows correct item count", "Optional[Headphone count]") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("System shows correct item count", "Optional[Headphone count]")</span>
+                  <span class="parameters">("User searches for a valid product", "Optional[Search bar]")</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_TIMED_OUT
+  (Session info: MicrosoftEdge=142.0.3595.94)
+Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [043262589943af86a83b1df920994be3, get {url=https://advantageonlineshopping.com/#/}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 142.0.3595.94, fedcm:accounts: true, goog:processID: 14140, ms:edgeOptions: {debuggerAddress: localhost:52366}, msedge: {msedgedriverVersion: 142.0.3595.94 (6565d6e52817..., userDataDir: C:\Windows\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52366/devtoo..., se:cdpVersion: 142.0.3595.94, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 043262589943af86a83b1df920994be3
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:325)
+	at pageObjects.Search.getWebPage(Search.java:21)
+	at stepdefenition.searchValid.user_is_in_home_page(searchValid.java:28)
+	at ✽.user is in home page(file:///C:/Selenium%20demo/maven_cucumber_testNG/features/search.feature:5)
+... Removed 3 stack frames
+</div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -204,26 +214,26 @@
                   </a> <!-- runScenario("User gives invalid details", "Optional[Register Page]") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("User gives invalid details", "Optional[Register Page]")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;User searches for an invalid product&quot;, &quot;Optional[Search bar]&quot;)">
-                  </a> <!-- runScenario("User searches for an invalid product", "Optional[Search bar]") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("User searches for an invalid product", "Optional[Search bar]")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;User removes a product from cart&quot;, &quot;Optional[Remove from cart]&quot;)">
-                  </a> <!-- runScenario("User removes a product from cart", "Optional[Remove from cart]") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("User removes a product from cart", "Optional[Remove from cart]")</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_TIMED_OUT
+  (Session info: MicrosoftEdge=142.0.3595.94)
+Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [1c4d3b87091c987494fdc335e2ee5f88, get {url=https://advantageonlineshopping.com/#/}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 142.0.3595.94, fedcm:accounts: true, goog:processID: 13060, ms:edgeOptions: {debuggerAddress: localhost:52214}, msedge: {msedgedriverVersion: 142.0.3595.94 (6565d6e52817..., userDataDir: C:\Windows\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52214/devtoo..., se:cdpVersion: 142.0.3595.94, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1c4d3b87091c987494fdc335e2ee5f88
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:325)
+	at stepdefenition.RegsiterWithValidDetails.user_is_in_the_registration_page(RegsiterWithValidDetails.java:30)
+	at ✽.user is in the registration page(file:///C:/Selenium%20demo/maven_cucumber_testNG/features/registerPage.feature:5)
+... Removed 3 stack frames
+</div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -234,16 +244,31 @@
                   </a> <!-- runScenario("User gives valid details", "Optional[Register Page]") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("User gives valid details", "Optional[Register Page]")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;User searches for a valid product&quot;, &quot;Optional[Search bar]&quot;)">
-                  </a> <!-- runScenario("User searches for a valid product", "Optional[Search bar]") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("User searches for a valid product", "Optional[Search bar]")</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[@class=&quot;hi-user containMiniTitle ng-binding&quot;]&quot;}
+  (Session info: MicrosoftEdge=142.0.3595.94)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [aacce722f7a96a6e7c943265b1a9c300, findElement {using=xpath, value=//span[@class=&quot;hi-user containMiniTitle ng-binding&quot;]}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 142.0.3595.94, fedcm:accounts: true, goog:processID: 13408, ms:edgeOptions: {debuggerAddress: localhost:52145}, msedge: {msedgedriverVersion: 142.0.3595.94 (6565d6e52817..., userDataDir: C:\Windows\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52145/devtoo..., se:cdpVersion: 142.0.3595.94, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: aacce722f7a96a6e7c943265b1a9c300
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at pageObjects.RegisterUser.ifRegistered(RegisterUser.java:53)
+	at stepdefenition.RegsiterWithValidDetails.user_gives_valid_details_username_email_password(RegsiterWithValidDetails.java:52)
+	at ✽.user gives valid details: username &quot;User207&quot;, email &quot;user8@gmail.com&quot;,password &quot;User1@&quot;(file:///C:/Selenium%20demo/maven_cucumber_testNG/features/registerPage.feature:9)
+... Removed 3 stack frames
+</div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -254,6 +279,158 @@
                   </a> <!-- runScenario("User gives invalid details", "Optional[Register Page]") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("User gives invalid details", "Optional[Register Page]")</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_TIMED_OUT
+  (Session info: MicrosoftEdge=142.0.3595.94)
+Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [46a75cd15bb5a354b902d38a7b2d9754, get {url=https://advantageonlineshopping.com/#/}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 142.0.3595.94, fedcm:accounts: true, goog:processID: 6372, ms:edgeOptions: {debuggerAddress: localhost:52252}, msedge: {msedgedriverVersion: 142.0.3595.94 (6565d6e52817..., userDataDir: C:\Windows\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52252/devtoo..., se:cdpVersion: 142.0.3595.94, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 46a75cd15bb5a354b902d38a7b2d9754
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:325)
+	at stepdefenition.RegsiterWithValidDetails.user_is_in_the_registration_page(RegsiterWithValidDetails.java:30)
+	at ✽.user is in the registration page(file:///C:/Selenium%20demo/maven_cucumber_testNG/features/registerPage.feature:5)
+... Removed 3 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;User searches for an invalid product&quot;, &quot;Optional[Search bar]&quot;)">
+                  </a> <!-- runScenario("User searches for an invalid product", "Optional[Search bar]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("User searches for an invalid product", "Optional[Search bar]")</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_TIMED_OUT
+  (Session info: MicrosoftEdge=142.0.3595.94)
+Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [9fb3911a69a4d3769c61f2772b3d0cd5, get {url=https://advantageonlineshopping.com/#/}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 142.0.3595.94, fedcm:accounts: true, goog:processID: 6616, ms:edgeOptions: {debuggerAddress: localhost:52404}, msedge: {msedgedriverVersion: 142.0.3595.94 (6565d6e52817..., userDataDir: C:\Windows\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52404/devtoo..., se:cdpVersion: 142.0.3595.94, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9fb3911a69a4d3769c61f2772b3d0cd5
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:325)
+	at pageObjects.Search.getWebPage(Search.java:21)
+	at stepdefenition.searchValid.user_is_in_home_page(searchValid.java:28)
+	at ✽.user is in home page(file:///C:/Selenium%20demo/maven_cucumber_testNG/features/search.feature:5)
+... Removed 3 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;User removes a product from cart&quot;, &quot;Optional[Remove from cart]&quot;)">
+                  </a> <!-- runScenario("User removes a product from cart", "Optional[Remove from cart]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("User removes a product from cart", "Optional[Remove from cart]")</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_TIMED_OUT
+  (Session info: MicrosoftEdge=142.0.3595.94)
+Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [e30078574038cff7f94aed15f3945061, get {url=https://advantageonlineshopping.com/#/}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 142.0.3595.94, fedcm:accounts: true, goog:processID: 8992, ms:edgeOptions: {debuggerAddress: localhost:52329}, msedge: {msedgedriverVersion: 142.0.3595.94 (6565d6e52817..., userDataDir: C:\Windows\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52329/devtoo..., se:cdpVersion: 142.0.3595.94, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e30078574038cff7f94aed15f3945061
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:325)
+	at pageObjects.Cart.navigateToHeadphone(Cart.java:15)
+	at stepdefenition.removeFromCart.user_is_in_cart_page(removeFromCart.java:32)
+	at ✽.user is in cart page(file:///C:/Selenium%20demo/maven_cucumber_testNG/features/removeFromCart.feature:4)
+... Removed 3 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;User adds an item to cart&quot;, &quot;Optional[Add to cart]&quot;)">
+                  </a> <!-- runScenario("User adds an item to cart", "Optional[Add to cart]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("User adds an item to cart", "Optional[Add to cart]")</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Bombizini guzini&quot;}
+  (Session info: MicrosoftEdge=142.0.3595.94)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [8dbf15081907dfe59490c59118e2afd1, findElement {using=link text, value=Bombizini guzini}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 142.0.3595.94, fedcm:accounts: true, goog:processID: 5700, ms:edgeOptions: {debuggerAddress: localhost:51934}, msedge: {msedgedriverVersion: 142.0.3595.94 (6565d6e52817..., userDataDir: C:\Windows\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51934/devtoo..., se:cdpVersion: 142.0.3595.94, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8dbf15081907dfe59490c59118e2afd1
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at pageObjects.Cart.addHeadphoneToCart(Cart.java:19)
+	at stepdefenition.verifyCart.user_adds_a_headphone_to_cart(verifyCart.java:34)
+	at ✽.user adds a headphone to cart(file:///C:/Selenium%20demo/maven_cucumber_testNG/features/addToCart.feature:6)
+... Removed 3 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;System shows correct item count&quot;, &quot;Optional[Headphone count]&quot;)">
+                  </a> <!-- runScenario("System shows correct item count", "Optional[Headphone count]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("System shows correct item count", "Optional[Headphone count]")</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.titleItemsCount.ng-binding&quot;}
+  (Session info: MicrosoftEdge=142.0.3595.94)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [947f63a46021344fda9c948ed0167738, findElement {using=css selector, value=.titleItemsCount.ng-binding}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 142.0.3595.94, fedcm:accounts: true, goog:processID: 3712, ms:edgeOptions: {debuggerAddress: localhost:52026}, msedge: {msedgedriverVersion: 142.0.3595.94 (6565d6e52817..., userDataDir: C:\Windows\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52026/devtoo..., se:cdpVersion: 142.0.3595.94, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 947f63a46021344fda9c948ed0167738
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at pageObjects.Headphones.getItemCount(Headphones.java:22)
+	at stepdefenition.HeadphoneCountCheck.the_item_count_is_displayed(HeadphoneCountCheck.java:38)
+	at ✽.the item count is displayed(file:///C:/Selenium%20demo/maven_cucumber_testNG/features/itemCount.feature:7)
+... Removed 3 stack frames
+</div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -264,6 +441,44 @@
                   </a> <!-- runScenario("User gives invalid details", "Optional[Register Page]") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("User gives invalid details", "Optional[Register Page]")</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_TIMED_OUT
+  (Session info: MicrosoftEdge=142.0.3595.94)
+Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [b8073b29d1af27c8945dd7bf603ac83b, get {url=https://advantageonlineshopping.com/#/}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 142.0.3595.94, fedcm:accounts: true, goog:processID: 13820, ms:edgeOptions: {debuggerAddress: localhost:52292}, msedge: {msedgedriverVersion: 142.0.3595.94 (6565d6e52817..., userDataDir: C:\Windows\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52292/devtoo..., se:cdpVersion: 142.0.3595.94, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b8073b29d1af27c8945dd7bf603ac83b
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:325)
+	at stepdefenition.RegsiterWithValidDetails.user_is_in_the_registration_page(RegsiterWithValidDetails.java:30)
+	at ✽.user is in the registration page(file:///C:/Selenium%20demo/maven_cucumber_testNG/features/registerPage.feature:5)
+... Removed 3 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testrunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;System should not show any duplicate products&quot;, &quot;Optional[No duplicate feature]&quot;)">
+                  </a> <!-- runScenario("System should not show any duplicate products", "Optional[No duplicate feature]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("System should not show any duplicate products", "Optional[No duplicate feature]")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -342,48 +557,48 @@ data.addRows(10);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'testrunner')
-data.setCell(0, 3, 100768);
+data.setCell(0, 3, 134541);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'testrunner')
-data.setCell(1, 3, 18752);
+data.setCell(1, 3, 131036);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'runScenario')
 data.setCell(2, 2, 'testrunner')
-data.setCell(2, 3, 18249);
+data.setCell(2, 3, 130957);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'runScenario')
 data.setCell(3, 2, 'testrunner')
-data.setCell(3, 3, 16610);
+data.setCell(3, 3, 130642);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'runScenario')
 data.setCell(4, 2, 'testrunner')
-data.setCell(4, 3, 14159);
+data.setCell(4, 3, 43534);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'runScenario')
 data.setCell(5, 2, 'testrunner')
-data.setCell(5, 3, 12519);
+data.setCell(5, 3, 43380);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'runScenario')
 data.setCell(6, 2, 'testrunner')
-data.setCell(6, 3, 12512);
+data.setCell(6, 3, 43325);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'runScenario')
 data.setCell(7, 2, 'testrunner')
-data.setCell(7, 3, 12380);
+data.setCell(7, 3, 43311);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'runScenario')
 data.setCell(8, 2, 'testrunner')
-data.setCell(8, 3, 12368);
+data.setCell(8, 3, 43267);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'runScenario')
 data.setCell(9, 2, 'testrunner')
-data.setCell(9, 3, 12339);
+data.setCell(9, 3, 43255);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <span class="suite-total-time">Total running time: 13 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -419,58 +634,76 @@ return data;
               <div class="chronological-class-name">testrunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUpClass</span>
-                <span class="method-start">149 ms</span>
+                <span class="method-start">147 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">runScenario("User adds an item to cart", "Optional[Add to cart]")</span>
-                <span class="method-start">623 ms</span>
+                <span class="method-start">614 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">runScenario("System shows correct item count", "Optional[Headphone count]")</span>
-                <span class="method-start">19382 ms</span>
+                <span class="method-start">131659 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("System should not show any duplicate products", "Optional[No duplicate feature]")</span>
-                <span class="method-start">33543 ms</span>
+                <span class="method-start">262305 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">runScenario("User gives valid details", "Optional[Register Page]")</span>
-                <span class="method-start">134315 ms</span>
+                <span class="method-start">393264 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">runScenario("User gives invalid details", "Optional[Register Page]")</span>
-                <span class="method-start">150926 ms</span>
+                <span class="method-start">527809 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">runScenario("User gives invalid details", "Optional[Register Page]")</span>
-                <span class="method-start">163447 ms</span>
+                <span class="method-start">571191 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">runScenario("User gives invalid details", "Optional[Register Page]")</span>
-                <span class="method-start">175788 ms</span>
+                <span class="method-start">614519 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">runScenario("User removes a product from cart", "Optional[Remove from cart]")</span>
-                <span class="method-start">188171 ms</span>
+                <span class="method-start">657789 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">runScenario("User searches for a valid product", "Optional[Search bar]")</span>
-                <span class="method-start">206422 ms</span>
+                <span class="method-start">701046 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">runScenario("User searches for an invalid product", "Optional[Search bar]")</span>
-                <span class="method-start">218936 ms</span>
+                <span class="method-start">744359 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">231306 ms</span>
+                <span class="method-start">787901 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">utilities.reporter</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">231391 ms</span>
+                <span class="method-start">788028 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

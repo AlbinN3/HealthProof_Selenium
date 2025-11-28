@@ -9,6 +9,7 @@ import com.relevantcodes.extentreports.LogStatus;
 
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.qameta.allure.Allure;
 import pageObjects.RegisterUser;
 import utilities.Screenshot;
 import utilities.reporter;
@@ -39,10 +40,12 @@ public class RegisterWithInvalidDetails extends reporter{
 	    try {
 	    	assertTrue(registeruser.ifEmailWrong());
 	    	logger.log(LogStatus.PASS, "System shows error message for invalid email");
+	    	Allure.step("System does not accept invalid email");
 	    }catch(AssertionError e) {
 	    	logger.log(LogStatus.FAIL, "System does not show error message for invalid email, test fail");
 	    	try {
-				screenshot.takeScreenshot("Wrong_email");
+				screenshot.takeScreenshot("Wrong_email"); 
+				Allure.addAttachment("System accepts invalid email", e.getMessage());
 			} catch (IOException e1) {
 				e1.printStackTrace();
 			}

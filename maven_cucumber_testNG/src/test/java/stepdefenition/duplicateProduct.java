@@ -16,6 +16,7 @@ import com.relevantcodes.extentreports.LogStatus;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.qameta.allure.Allure;
 import pageObjects.Headphones;
 import utilities.Screenshot;
 import utilities.reporter;
@@ -45,10 +46,12 @@ public class duplicateProduct extends reporter{
 	    try {
 	    	assertEquals(itemSet.size(),items.size());
 	    	logger.log(LogStatus.PASS, "There are no duplicate items");
+	    	Allure.step("No duplicate items");
 	    }catch(AssertionError e) {
 	    	logger.log(LogStatus.FAIL, "There are duplicate items, test failed");
 	    	try {
 				screenshot.takeScreenshot("Duplicate_Product");
+				Allure.addAttachment("There are duplicate elements", e.getMessage());
 			} catch (IOException e1) {
 				e1.printStackTrace();
 			}

@@ -14,6 +14,7 @@ import com.relevantcodes.extentreports.LogStatus;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.qameta.allure.Allure;
 import pageObjects.Cart;
 import utilities.Screenshot;
 import utilities.reporter;
@@ -43,9 +44,11 @@ public class verifyCart extends reporter{
 	    try {
 	    	assertTrue(itemString.contains("bombizini guzini"));
 	    	logger.log(LogStatus.PASS, "Item successfully added to cart");
+	    	Allure.step("Item successfully added to cart");
 	    }catch(AssertionError e) {
 	    	logger.log(LogStatus.FAIL, "Item did not appeared in cart,test failed");
 	    	try {
+	    		Allure.addAttachment("Item did not appeared in cart,test failed", e.getMessage());
 				screenshot.takeScreenshot("Cart");
 			} catch (IOException e1) {
 				e1.printStackTrace();
