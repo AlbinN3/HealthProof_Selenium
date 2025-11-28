@@ -52,6 +52,7 @@ public class duplicateProduct extends reporter{
 	    	try {
 				screenshot.takeScreenshot("Duplicate_Product");
 				Allure.addAttachment("There are duplicate elements", e.getMessage());
+				throw e;
 			} catch (IOException e1) {
 				e1.printStackTrace();
 			}

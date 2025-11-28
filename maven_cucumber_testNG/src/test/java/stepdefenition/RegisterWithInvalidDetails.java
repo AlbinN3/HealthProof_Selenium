@@ -46,6 +46,7 @@ public class RegisterWithInvalidDetails extends reporter{
 	    	try {
 				screenshot.takeScreenshot("Wrong_email"); 
 				Allure.addAttachment("System accepts invalid email", e.getMessage());
+				throw e;
 			} catch (IOException e1) {
 				e1.printStackTrace();
 			}

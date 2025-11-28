@@ -40,6 +40,7 @@ public class searchInvalid extends reporter{
 	    	try {
 				screenshot.takeScreenshot("Invalid_search");
 				Allure.addAttachment("Invalid search has result, test failed", e.getMessage());
+				throw e;
 			} catch (IOException e1) {
 				e1.printStackTrace();
 			}
