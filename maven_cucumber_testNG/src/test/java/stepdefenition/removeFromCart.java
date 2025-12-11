@@ -63,6 +63,7 @@ public class removeFromCart extends reporter{
 	    	try {
 	    		Allure.addAttachment("Item not removed", e.getMessage());
 				screenshot.takeScreenshot("Item_Not_Removed");
+				throw e;
 			} catch (IOException e1) {
 				e1.printStackTrace();
 			}

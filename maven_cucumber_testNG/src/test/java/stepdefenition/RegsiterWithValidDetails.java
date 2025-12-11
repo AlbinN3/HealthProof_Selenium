@@ -64,6 +64,7 @@ public class RegsiterWithValidDetails extends reporter{
 			try {
 				screenshot.takeScreenshot("Registration_failure");
 				Allure.addAttachment("Registration_failure", e.getMessage());
+				throw e;
 			} catch (IOException e1) {
 				e1.printStackTrace();
 			}

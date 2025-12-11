@@ -50,6 +50,7 @@ public class verifyCart extends reporter{
 	    	try {
 	    		Allure.addAttachment("Item did not appeared in cart,test failed", e.getMessage());
 				screenshot.takeScreenshot("Cart");
+				throw e;
 			} catch (IOException e1) {
 				e1.printStackTrace();
 			}

@@ -44,6 +44,7 @@ public class searchValid extends reporter{
 	    	try {
 	    		Allure.addAttachment("Valid search has no result, test failed", e.getMessage());
 				screenshot.takeScreenshot("Valid_search");
+				throw e;
 			} catch (IOException e1) {
 				e1.printStackTrace();
 			}

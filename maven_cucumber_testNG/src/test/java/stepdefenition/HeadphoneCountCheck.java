@@ -50,6 +50,7 @@ public class HeadphoneCountCheck extends reporter{
 			try {
 				screenshot.takeScreenshot("Item count is different");
 				Allure.addAttachment("Item count does not match", e.getMessage());
+				throw e;
 			} catch (IOException e1) {
 				e1.printStackTrace();
 			}
